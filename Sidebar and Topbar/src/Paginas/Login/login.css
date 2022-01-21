@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.TLogin{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Containerlogin{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: lightblue;
+}
+
+.wraplogin{
+    width: 390px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 2px 2px 10px darkblue;
+}
+
+.formlogin{
+    width: 100%;
+}
+
+.logintitle{
+    display: block;
+    font-size: 30px;
+    color: black;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapinput{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+}
+
+.input{
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.focusinput{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: #adadad;
+}
+
+.focusinput::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    
+    background: -webkit-linear-gradient(to left, #2500FF, #00E2FF);
+  background: -o-linear-gradient(to left, #2500FF, #00E2FF);
+  background: -moz-linear-gradient(to left, #2500FF, #00E2FF);
+  background: linear-gradient(to left, #2500FF, #00E2FF);
+
+}
+
+.focusinput::after{
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+.input:focus + .focusinput::after{
+    top: -15px;
+}
+
+.input:focus + .focusinput::before{
+    width: 100%;
+}
+
+.loginbtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+
+.loginbtnform{
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+
+.loginbtnform:hover{
+    cursor: pointer;
+}
+
+.textlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.conta{
+    font-size: 14px;
+    color: #353535;
+    line-height: 1.5;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.criarconta{
+    font-size: 14px;
+    color: #6a7dfe;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.has-val + .focusinput::after{
+    top: -15px;
+}
+
+.has-val + .focusinput::before{
+    width: 100%;
+}

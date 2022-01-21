@@ -1,0 +1,36 @@
+.featured{
+    width: 100%;
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+}
+
+.featureditem{
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 11px -1px #000000; 
+    box-shadow: 0px 0px 11px -1px #000000;
+}
+
+.featuredtitle{
+    font-size: 20px;
+}
+
+.featuredmoneycontainer{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.featuredmoney{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.featuredsub{
+    color: gray;
+    font-size: 15px;
+}
